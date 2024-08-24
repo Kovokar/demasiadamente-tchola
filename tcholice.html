@@ -3,17 +3,45 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imagem Local em A-Frame</title>
+    <title>Sala com Corredor em A-Frame</title>
     <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
   </head>
   <body>
     <a-scene>
-      <!-- Plano com a imagem local -->
-      <a-plane position="0 1.6 -3" width="4" height="2" material="src: url(./ee.jpg)"></a-plane>
+      <!-- Piso da sala -->
+      <a-plane position="0 0 0" rotation="-90 0 0" width="20" height="20" color="#3b3c37"></a-plane>
       
-      <!-- Solo -->
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="10" height="10" color="#7BC8A4"></a-plane>
+      <!-- Paredes da sala -->
+       <!-- frontal -->
+      <a-plane position="0 2.5 -10" rotation="0 0 0" width="20" height="5" color="#e3e3eb"></a-plane>
+      <a-plane position="-6.7 2.5 -9.99" width="6" height="3" material="src: url(./te.jpeg)"></a-plane>    
+      <a-plane position="0 2.5 -9.99" width="6" height="3" material="src: url(./te.jpeg)"></a-plane>      
+      <a-plane position="6.7 2.5 -9.99" width="6" height="3" material="src: url(./te.jpeg)"></a-plane>      
+
+
+
+      <a-plane position="0 2.5 10" rotation="0 180 0" width="20" height="5" color="#e3e3eb"></a-plane>
+      <a-plane position="0 2.5 9.99" rotation="0 180 0" width="6" height="3" material="src: url(./te.jpeg)"></a-plane>    
+
+
+
       
+      <a-plane position="-10 2.5 0" rotation="0 90 0" width="20" height="5" color="#e3e3eb"></a-plane>
+      <a-plane position="10 2.5 0" rotation="0 -90 0" width="20" height="5" color="#e3e3eb"></a-plane>
+      
+      <!-- Teto da sala -->
+      <a-plane position="0 5 0" rotation="90 0 0" width="20" height="20" color="#939491"></a-plane>
+
+      <!-- Corredor -->
+      <!-- <a-box position="0 2.5 -25" rotation="0 0 0" width="10" height="5" depth="30" color="#0000FF"></a-box>
+      
+      Paredes internas do corredor
+      <a-plane position="-5 2.5 -25" rotation="0 90 0" width="30" height="5" color="#00FF00"></a-plane>
+      <a-plane position="5 2.5 -25" rotation="0 -90 0" width="30" height="5" color="#00FF00"></a-plane>
+      <a-plane position="0 5 -25" rotation="0 -90 0" width="30" height="5" color="#00FF00"></a-plane>
+      <a-plane position="0 2 -25" rotation="0 -90 0" width="30" height="5" color="red"></a-plane>
+      <a-plane position="0 0 0" rotation="-90 0 0" width="20" height="20" color="#808080"></a-plane> -->
+
       <!-- Céu -->
       <a-sky color="#ECECEC"></a-sky>
     </a-scene>
